@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the Tech Conference 2024</h1>
+        <nav>
+            <a href="#about">About</a> | 
+            <a href="#schedule">Schedule</a> | 
+            <a href="#register">Register</a> | 
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About the Event</h2>
+            <p>The Tech Conference 2024 is the premier event for professionals in the tech industry. Join us for an exciting day filled with insightful talks, workshops, and networking opportunities.</p>
+            <img src="Tech-Conferences.jpg" alt="Tech Conference Image" width="600">
+        </section>
+
+        <!-- Event Schedule (Table) -->
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <table border="1" cellpadding="10">
+                <tr>
+                    <th>Time</th>
+                    <th>Session</th>
+                    <th>Speaker</th>
+                </tr>
+                <tr>
+                    <td>9:00 AM - 10:00 AM</td>
+                    <td>Keynote Address</td>
+                    <td>Smit Patel</td>
+                </tr>
+                <tr>
+                    <td>10:30 AM - 12:00 PM</td>
+                    <td>Workshop: AI Innovations</td>
+                    <td>Het Patel</td>
+                </tr>
+                <tr>
+                    <td>1:00 PM - 2:30 PM</td>
+                    <td>Panel: Future of Cloud Computing</td>
+                    <td>Various Speaker</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="register">
+            <h2>Register for the Event</h2>
+            <form action="success.html" method="post">
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div>
+                    <label>Meal Preference:</label>
+                    <input type="radio" id="veg" name="meal" value="Vegetarian">
+                    <label for="veg">Vegetarian</label>
+                    <input type="radio" id="nonveg" name="meal" value="Non-Vegetarian">
+                    <label for="nonveg">Non-Vegetarian</label>
+                </div>
+                <div>
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Subscribe to our newsletter</label>
+                </div>
+                <div>
+                    <button type="submit">Submit Registration</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p> <center>&copy; 2024 Tech Conference. All rights reserved.</center> </p>
+    </footer>
+</body>
+</html>
